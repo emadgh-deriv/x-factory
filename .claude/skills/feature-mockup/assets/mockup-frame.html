@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>FEATURE NAME mockup</title>
+<style>
+/* Page chrome only. Product UI inside .mk-screen uses the project's design system and tokens. */
+:root{--mk-bg:#f4f5f8;--mk-fg:#1b2030;--mk-muted:#5b6275;--mk-line:#d9dce5;--mk-ann:#7c3aed}
+body{margin:0;background:var(--mk-bg);color:var(--mk-fg);font:15px/1.5 system-ui,sans-serif}
+.mk-page{max-width:1400px;margin:0 auto;padding:32px 24px 64px}
+.mk-page h1{margin:0 0 4px;font-size:28px}
+.mk-status{display:inline-block;font-size:12px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:var(--mk-ann);border:1px solid var(--mk-ann);border-radius:99px;padding:2px 10px}
+.mk-section{margin-top:40px}
+.mk-section h2{font-size:20px;margin:0 0 12px}
+.mk-row{display:flex;flex-wrap:wrap;gap:32px;align-items:flex-start}
+.mk-frame{display:flex;flex-direction:column;gap:8px}
+.mk-frame figcaption{font-size:13px;color:var(--mk-muted);font-weight:600}
+/* transform contains fixed-position overlays (dialogs, sheets) inside the frame */
+.mk-screen{position:relative;overflow:hidden;background:#fff;border:1px solid var(--mk-line);border-radius:10px;transform:translateZ(0)}
+.mk-desktop{width:1280px;height:800px}
+.mk-portrait{width:390px;height:844px;border-radius:28px}
+.mk-landscape{width:844px;height:390px;border-radius:28px}
+.mk-ann{position:absolute;z-index:999;width:22px;height:22px;border-radius:50%;background:var(--mk-ann);color:#fff;font:700 12px/22px system-ui;text-align:center;box-shadow:0 0 0 3px #fff}
+.mk-new{outline:2px dashed var(--mk-ann);outline-offset:2px}
+.mk-caveat{margin-top:16px;padding:12px 16px;border-left:4px solid #d97706;background:#fff7e6}
+</style>
+<!-- Inline the project's design-system CSS and tokens here. -->
+</head>
+<body>
+<main class="mk-page">
+  <h1>FEATURE NAME</h1>
+  <span class="mk-status">Proposed</span>
+  <p>Companion spec: <code>YYYY-MM-DD-feature.md</code>. Sample data is illustrative.</p>
+  <div class="mk-caveat">Data caveat: remove this block if the data supports everything drawn.</div>
+
+  <section class="mk-section">
+    <h2>1 · SCREEN NAME</h2>
+    <div class="mk-row">
+      <figure class="mk-frame"><figcaption>Desktop 1280×800</figcaption>
+        <div class="mk-screen mk-desktop">
+          <!-- product UI -->
+          <span class="mk-ann" style="top:24px;left:24px">1</span>
+        </div>
+      </figure>
+      <figure class="mk-frame"><figcaption>Mobile portrait 390×844</figcaption>
+        <div class="mk-screen mk-portrait"><!-- product UI --></div>
+      </figure>
+      <figure class="mk-frame"><figcaption>Mobile landscape 844×390</figcaption>
+        <div class="mk-screen mk-landscape"><!-- product UI --></div>
+      </figure>
+    </div>
+  </section>
+</main>
+</body>
+</html>
