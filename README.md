@@ -1,4 +1,4 @@
-# XFactory
+# xFactory
 
 A starter template for building a product with AI and skills **as working MVP first, then one feature at a time, each designed as a mockup before any code is written.**
 
@@ -52,7 +52,7 @@ x-factory/
 ### 1. Start the project
 
 ```bash
-npx degit deriv-com/x-factory <your-project>
+npx degit emadgh-deriv/x-factory <your-project>
 ```
 
 Then in the project:
